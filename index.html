@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Dashboard</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <aside>   
+            <div class="top">
+                <h4>Cry<span>pto</span></h4>
+                    <!--<div class="theme-toggle">
+                          <span class="active"><i class="fa fa-sun"></i></span>
+                          <span><i class="fa fa-moon"></i></span>
+                      </div> -->
+              </div>
+                  
+            <div class="sidebar">
+                <li><i class="fa fa-dashboard"></i><a href="#"></a></li>
+    <li><i class="fa fa-suitcase"></i><a href="#"></a></li>
+    <li><i class="fa fa-exchange"></i><a href="#"></a></li>
+    <li><i class="fa fa-wallet"></i><a href="#"></a></li>
+            </div>
+        </aside>
+        <main>
+            <div class="exchange">
+                <span>
+                    <i class="fa fa-dashboard"></i>
+                    Exchange Not Connected
+               </span>
+               <div class="subscription">
+                <span>Trial Subscription - 7 more days left </span>
+                <button class="subscription-btn btn">Renew Subscription</button>
+               </div>
+            </div>
+    <div class="balance-info">
+        <div class="balance"> 
+           <span class="wallet"><i class="fa fa-wallet"></i> Balance </span>
+           <h1> <span class="dollor">$</span>25,200.97</h1>
+        <div class="balanace-invest">
+            <div class="invested">
+                <span><i class="fa fa-arrow-down"></i> Invested</span>
+                <span class="invest-value">$10,458.00</span>      
+            </div>
+            <div class="profit">
+                <span><i class="fa fa-arrow-up" ></i> % Profit</span>
+                <span class="invest-value">+ 60%</span>
+            </div>
+            <div class="usd-profit">
+                <span><i class="fa fa-arrow-up"></i> USD Profit</span>
+                <span class="invest-value">$15,648.38</span>
+            </div>
+        </div>
+        <div class="exchange-btn">
+            <button class="add-exchange-btn"" >Add Exchange</button>
+        </div>
+   
+    </div>
+        <div class="coin-info">
+            <div id="graph">
+                <div class="ui-widgets">
+                    <div class="ui-values">$25,500.97</div>
+                </div>
+            </div>
+            <div class="coins">
+                <li class="bitcoin">Bitcoin</li>
+                <span>$11,567.00</span>
+                <li class="ethereum">Ethereum</li>
+                <span>$5,583.00</span>
+                <li class="monero">Monero</li>
+                <span>$8,050.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-info">
+        <div class="portfolio1">
+            <div class="top-port">
+             <div class="head-port">
+                <span class="port-name"><i class="fa fa-suitcase"></i> Portfolio 1 </span>
+                <span class="day-profit">Day  <i class="fa fa-caret-up"></i> 3.7%</span>
+            </div>
+                <div id="port-chart">
+                   <img src="./Images/LineChart.png" alt="">
+                </div>
+                <hr>
+                <div class="profit-info">
+                    <div class="week-info">
+                        <span >Week</span>
+                        <span><i class="fa fa-caret-down"></i>7%</span>
+                    </div>
+                    <div class="year-info">
+                        <span class="">Year</span>
+                        <span><i class="fa fa-caret-up"></i>29% </span>
+                    </div>
+                    <div class="all-time">
+                        <span class="">All time</span>
+                        <span><i class="fa fa-caret-up"></i> 254% </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio2">
+            <div class="top-port">
+                <div class="head-port">
+                    <span class="port-name"><i class="fa fa-suitcase"></i> Portfolio 1 </span>
+                    <span class="day-profit">Day  <i class="fa fa-caret-up"></i> 3.7%</span>
+                </div>
+            <div id="port-chart">
+                <img src="./Images/LineChart.png" alt="">
+            </div>
+                <hr>
+                <div class="profit-info">
+                    <div class="week-info">
+                        <span class="">Week</span>
+                        <span><i class="fa fa-caret-down"></i>7%</span>
+                    </div>
+                    <div class="year-info">
+                        <span class="">Year</span>
+                        <span> <i class="fa fa-caret-up"></i>29% </span>
+                    </div>
+                    <div class="all-time">
+                        <span class="">All time</span>
+                        <span><i class="fa fa-caret-up"></i> 254% </span>
+                    </div>
+                </div>
+         </div>
+        </div>
+        <div class="portfolio3">
+            <div class="top-port">
+                <div class="head-port">
+                    <span class="port-name"><i class="fa fa-suitcase"></i> Portfolio 1 </span>
+                    <span class="day-profit">Day  <i class="fa fa-caret-up"></i> 3.7%</span>
+                </div>
+                <div class="port-chart">
+                    <img src="./Images/LineChart.png" alt="">
+                </div>
+                <hr>
+                <div class="profit-info">
+                    <div class="week-info">
+                        <span>Week</span>
+                        <span><i class="fa fa-caret-down"></i>7%</span>
+                    </div>
+                    <div class="year-info">
+                        <span>Year</span>
+                        <span><i class="fa fa-caret-up"></i>29% </span>
+                    </div>
+                    <div class="all-time">
+                        <span class="">All time</span>
+                        <span><i class="fa fa-caret-up"></i> 254% </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chart-info">
+        <div class="chart">
+                <img src="./Images/candle chart.png" alt="" class="candle-img">
+        </div>
+        <div class="transaction-info">
+            <div class="trans-head">
+                <span><i class="fa fa-exchange"></i> Transactions</span>
+                <span class="see-all">See all</span>
+            </div>
+            <div class="buy-sell">
+            <Span><i class="fa fa-arrow-down circle-icon"></i> Buy</Span>
+            <div class="sb-date">
+            <span class="sb">$250.00</span> <span class="sb"> Apr 20,2020</span>
+            </div>
+            <span><i class="fa fa-arrow-up circle-icon"></i> Sell</span>
+            <div class="sb-date">
+            <span class="sb">$250.00</span> <span class="sb"> Apr 16,2020</span>
+        </div>
+            <Span><i class="fa fa-arrow-up circle-icon"></i> Sell</Span>
+            <div class="sb-date">
+            <span class="sb">$250.00</span> <span class="sb"> Apr 10,2020</span>
+            </div>
+        </div>
+        </div>
+    </div>
+        </main>
+        <section class="right-sidebar">
+            <div class="profile">
+                <div class="profile-photo">
+                    <img src="./images/download.jpg" alt="Profile-pic">
+                </div>
+                <div class="info">
+                    <p>Good Morning,<b> Spencer!</b></p>
+                    <span class="setting">Setting</span>
+                </div>
+            </div>
+            <div class="recent-activity">
+               <span><i class="fa fa-arrow-up-long arr"></i><i class="fa fa-arrow-down-long arr"></i> Recent activity</span>
+            </div>
+            <div class="activities">
+                <div class="activity1 act">
+                    <span><i class="fa fa-arrow-up"></i> 1,837 USD = 0.084 BTC</span><br/>
+                    <span class="invest-value">1 BTC = 8,468 USD</span>    
+                </div>
+                <div class="activity2 act">
+                    <span><i class="fa fa-arrow-up" ></i> 1,837 USD = 0.084 BTC</span><br/>
+                    <span class="invest-value">1 BTC = 8,468 USD</span>   
+                </div>
+                <div class="activity3 act">
+                    <span><i class="fa fa-arrow-up"></i> 1,837 USD = 0.084 BTC</span><br/>
+                    <span class="invest-value">1 BTC = 8,468 USD</span>   
+                </div>
+            </div>
+            <hr>
+            <div class="exchange-right">
+                <div class="exchange-head">
+                    <span><i class="fa fa-arrows-rotate"></i> Exchange</span>
+                   <Span><select name="" id="">
+                        <option value="USD">USD</option>
+                    </select>
+                    </Span>
+                </div>
+                <div class="usd-btc-echnage">
+                <input type="text" value="1,700.00 USD"><br/>
+                <span class="rotate-icon"><i class="fa fa-rotate circle-icon rotate"></i></span>
+                </br>
+                <input type="text" value="0,674931 BTC">
+            </div>
+                </div>
+    
+            <div class="invitation">
+                <img src="./Images/invitation1.png" alt="">
+               <span class="invite-red">Invite Customers and <span>get <b>$10</b> for each
+            </span></span>
+                <button class="send-btn"> Send Invitation</button>
+            </div>
+        </div>
+        </section>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

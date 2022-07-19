@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background-color: #fce7e7b6;
+    color:#000;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+ 
+    
+  }
+
+.container{
+    display: grid;
+    width:100%;
+    margin: 0 auto;
+    gap: 1.8em;
+    grid-template-columns: 4.5rem auto 20rem;
+    height: 100%;
+}
+.top{
+    display: flex;
+    background-color: #FFFFFF;
+    width: 64px;
+    padding-top: 20px;
+    padding-left: 14px;
+    box-shadow: #dce1eb;
+    width: 80px;
+}
+h4 span{
+    color: red;
+}
+aside .sidebar{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 80px;
+}
+.sidebar li{
+width: 80px;
+height: 45px;
+list-style: none;
+padding: 5px;
+margin: 0;
+transition: .3s ease;
+}
+.sidebar li:nth-child(1){
+    margin-bottom: 5px;
+    background-color: #f8e4d0;
+    border-left: 4px solid #f40707;
+}
+
+.sidebar li i{
+      color: #f40707;
+      width: 25px;
+      text-align: center;
+      font-size: 25px;
+      margin: 5px 10px 0 15px;
+      transition: 0.3s ease;
+     
+}
+
+.sidebar li:hover{
+    align-items: center;
+    margin-bottom: 2px;
+    background-color: #f8e4d0;
+    cursor: pointer;
+ }
+
+ .sidebar li:hover i{
+    color: #000;
+    align-items: center;
+ }
+ 
+ .exchange{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    gap: 25rem;
+    border-radius: 5px;
+    box-shadow: #41f1b6;
+ }
+ .exchange span{
+    font-size: 14px;
+    padding: 5px;
+ }
+ .subscription{
+    margin-right: -5px;
+ }
+ .exchange .subscription-btn{
+    height: 35px;
+    padding: 2px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    color: #f40707;; 
+    border-color: hsl(0, 94%, 49%);
+    cursor: pointer;
+    width: 10rem;
+ }
+ .subscription-btn:hover{
+    border-color: aquamarine;
+    color: #000;
+    font-size: 15px;
+    }
+.balance-info{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    width: 100%;
+    height: 11rem;   
+}
+.balance{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    cursor: pointer;
+    padding-left: 15px;
+}
+.balance .wallet{
+   padding-top: 8px;
+    padding-bottom: 1px;
+    padding-left: 15px;
+} 
+.dollor{
+    font-size:small;
+    padding-left: 12px;
+}
+.balanace-invest{
+    display: flex;
+    flex-direction: row;
+    padding-left: 8px;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;  
+     padding-right: 15px;
+     padding-top: 5px;
+     color: black;
+     margin-left: -25px;
+}
+.balanace-invest span{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color:#677483;
+
+}
+.balanace-invest i{
+     padding-right: 5px;
+     font-size: 10px;
+  
+}
+.balanace-invest .invest-value {
+    font-size: 14px;
+    margin-top: -5px;
+    color: red;
+    padding-bottom: 5px;
+    font-weight: bold;
+
+}
+.balanace-invest .profit{
+    border-right: 2px solid #e4e3e3;
+    border-left: 2px solid #e4e3e3;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.exchange-btn{
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.add-exchange-btn{
+    height: 35px;
+    padding: 2px;
+    padding-left: 15px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    color: #f40707;; 
+    border-color: hsl(0, 94%, 49%);
+    cursor: pointer;
+    width: 10rem;
+}   
+.add-exchange-btn:hover{
+    border-color: aquamarine;
+    color: #000;
+    font-size: 15px;
+    }
+
+.coin-info{
+    position: relative;
+    display: flex;
+    margin-left: 10px;
+    width: 50%;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    box-shadow: #7388ec;
+    cursor: pointer;
+
+}
+#graph {
+	position: relative;
+	text-align: center;
+	transform: translate(15%, -5%);
+}
+/* Apply css properties to ui-widgets class */
+.ui-widgets {
+	position: relative;
+	display: inline-block;
+	width: 9rem;
+	height: 9rem;
+	border-radius: 9rem;
+	margin:1.5rem;
+	border: .8rem solid red;
+	box-shadow: inset 0 0 7px grey;
+	border-left-color: red;
+    border-right-color: #eb3e3ebb;
+	border-top-color:#ef9f9bbb;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+
+/* Apply css properties to ui-widgets
+class and ui-values class */
+.ui-widgets .ui-values {
+	top: 50px;
+	position: absolute;
+	left: 10px;
+	right: 0;
+	font-weight: 700;
+    text-align: center;
+	font-size: 1rem;
+}
+ .coins{
+    margin: 10px;
+    padding-left: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ }
+.coins span{
+    padding-left: 30px;
+    color: black;
+    
+}
+.coins li{
+    font-size: 1rem;
+    color:#677483 ;
+    
+ }
+ .coins li::marker{
+        font-size: 1.4rem;
+}
+.coins .bitcoin::marker{
+   color:red;
+} 
+.coins .ethereum::marker{
+    color:#eb3e3ebb;
+ } 
+ .coins .monero::marker{
+    color:#ef9f9bbb;
+ } 
+ .fa-caret-down{
+    color: red;
+    font-size: 15px;
+ }
+ .fa-caret-up{
+    color:#0dea27;
+    font-size: 15px;
+ }
+.portfolio-info{
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+    height: 15rem;
+}
+.head-port{
+    display: flex;
+    gap:9rem;
+    padding: 6px;
+}
+.head-port h4{
+    padding-left:15px;
+}
+.day-profit{
+   display: flex;
+    justify-content: right;
+    padding-right: 5px;
+}
+.fa-caret-up{
+    margin-left: 6px;
+}
+.port-name{
+    padding-left: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#my-chart{
+    width: 100px;
+    height: 100px;
+}
+.portfolio1{
+    width: 50%;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.profit-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 15px;
+    padding-top: 5px;
+    color: black;
+    margin-left: 2px;
+    justify-items: center;
+}
+.profit-info i{
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    margin-left: -3px;
+}
+
+.profit-info span{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color:#000000;
+
+}
+
+img{
+width: 350px;
+height: 130px;
+}
+.profit-info .year-info{
+    border-right: 2px solid #e4e3e3;
+    border-left: 2px solid #e4e3e3;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.portfolio2{
+    width: 50%;
+    background-color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.portfolio3{
+    width: 50%;
+    background-color: #FFFFFF;
+    margin-left: 10px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.chart-info{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 14.3rem;
+}
+ .chart img{
+    width: 100%;
+    height: 100%;
+
+}
+.chart{
+    width: 70%;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+.transaction-info{
+    width: 30%;
+    background: #FFFFFF;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+.buy-sell{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+.circle-icon{
+    background-color: #e280805a;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: red;
+    margin-right: 10px;
+}
+.trans-head{
+    display: flex;
+    flex-direction: row;
+    gap:7rem;
+    margin: 15px;
+}
+.trans-head i{
+    color: red;
+    padding-right: 10px;
+    font-size: 12px;
+}
+.see-all{
+    display: block;
+    background-color: #e280805a;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+.sb{
+font-size: 15px;
+padding-bottom: 10px;
+padding-left: 45px;
+font-size: 13px;
+}
+.sb-date{
+    display: flex;
+    flex-direction: row;
+    gap:4rem;
+    color: #677483;
+    
+}
+
+.buy-sell i{
+    padding: 6px;
+}
+
+.right-sidebar{
+    background: #fff;
+    margin-left:-.75rem;
+    padding-top: 28px;
+    padding-left: 25px;
+    height: max-content;
+
+}
+.right-sidebar .profile{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 15px;
+}
+.profile .profile-photo img{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+.profile .info .setting{
+    font-size: 12px;
+    color: red;
+}
+
+.activities{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.recent-activity{
+ width: 100%;
+ padding-top: 15px;
+ padding-bottom: 5px;
+}
+.arr{
+    font-size: 12px;
+}
+.act{
+    padding: 7px;
+}
+ .invest-value {
+    margin-left: 15px;
+    font-size: 12px;
+    margin-top: -5px;
+    color: black;
+    font-weight: bold;
+}
+.activities .fa-arrow-up{
+    padding-bottom: 5px;
+    font-size: 10px;
+    color:#677483;
+
+}
+.rotate{
+    padding:5px;
+ }
+ .rotate-icon{
+    margin: 9rem;
+   
+ }
+ .usd-btc-echnage input{
+ border: 0.2px solid #d0cccc;
+ border-radius: 3px;
+ background-color: #FFFFFF;
+ padding: 20px;
+ height: 35px;
+ width: 85%;
+ font-size: 15px;
+ margin-left: 13px;
+
+ }
+
+.exchange-head{
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+    padding: 15px;
+}
+select{
+    text-decoration: none;
+    border: none;
+    background-color: #e280805a;
+    width: 60px;
+    height: 20px;
+}
+
+.invitation{
+    display: flexbox;
+    flex-wrap: wrap;
+    margin-top: 95px;
+    margin-left: 15px;
+    padding: 20px;
+    width: 260px;
+    height: 170px;
+    background: -webkit-radial-gradient(rgb(237, 8, 8),rgb(251, 82, 82));
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.invitation img{
+    position: relative;
+    left: 60px;
+    top: -4rem;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+} 
+.invite-red{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: -3.5rem;
+    padding-left: 20px;
+    padding-right: 15px;
+    word-wrap: break-word;
+}
+.invite-red span{
+    padding-left: 25px;
+}
+.invite-red  b{
+    font-size: 20px;
+}
+.send-btn{
+    margin-left: 28px;
+    align-items: center;
+        height: 35px;
+        background: #FFFFFF;
+        border-radius: 3px;
+        color: #f40707;; 
+        border-color: hsl(0, 94%, 49%);
+        cursor: pointer;
+        width: 10rem;
+    }   
+
+    .send-btn:hover{
+        border-color: aquamarine;
+        color: #000;
+        font-size: 15px;
+        }
